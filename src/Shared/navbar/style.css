@@ -1,0 +1,56 @@
+.black-nav-background{
+    background-color: #0f0f0f !important ;
+    color: aliceblue !important ;
+  }
+
+.nav-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 0 10em ;
+    align-items: center;
+    max-width: 100em;
+    margin: 0 auto;
+}
+.routes-container{
+    display: inline-block;
+    margin: 0;
+    padding: 1rem;
+    align-self: center;
+    margin-left: auto;
+    list-style-type: none;
+}
+.logo{
+    margin: 0;
+    color: #00caff;
+}
+.route{
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+.Link{
+    padding: 1em ;
+    color: inherit;
+    text-decoration: inherit;
+}
+.Link:hover{
+    /* background-color: #009aaf; */
+    color:#00caff;
+}
+.link-focus{
+    background-color: #00caff;
+    color:black !important;
+}
+body{
+    position: relative;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    letter-spacing: 0.01em;
+}

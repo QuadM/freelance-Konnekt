@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes as appRoutes } from "./Global/Routes";
+import NavBar from "./Shared/navbar/NavBar";
+import { useState } from "react";
 
 function App() {
+  const [currentPath, setPath] = useState(window.location.pathname);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar setPath={(path) => setPath(path)} currentPath={currentPath} />
+        <Routes>
+          {appRoutes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              element={<route.element />}
+              exact
+            />
+          ))}
+        </Routes>
+      </Router>
     </div>
   );
 }

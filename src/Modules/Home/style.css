@@ -1,0 +1,145 @@
+.blue-background {
+  background-image: rgba(0, 202, 255, 0.1), white;
+}
+.white-background {
+  background-color: #ffffff;
+}
+
+.black-background {
+  background-color: #0f0f0f;
+  color: aliceblue;
+}
+.light-gray-background {
+  background-color: #d0d0d0;
+}
+.dark-transparent-background {
+  background-color: rgba(25, 25, 25, 0.7);
+  color: #ffffff;
+}
+.light-transparent-background {
+  background-color: rgba(250, 250, 250, 0.7);
+  /* color: #ffffff; */
+}
+.highlight {
+  position: relative;
+}
+
+.highlight::before {
+  /* Highlight color */
+  background-color: rgba(0, 202, 255, 0.5);
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-0.2deg);
+}
+
+.light-gray-transparent-background {
+  background-color: rgba(50, 50, 50, 0.3);
+  color: #ffffff;
+}
+
+#image-container {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url(../../assets/konnekt2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+.page-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+#section-header {
+  position: relative;
+  color: #00caff;
+  z-index: 1;
+  font-size: 2em;
+  padding: 10em 0;
+  /* background-image: linear-gradient(right to left,#ff11ff,#11ff11); */
+}
+
+#section-one {
+  position: relative;
+  color: #0f0f0f;
+  background-color: #aaccff;
+  padding: 10em 0;
+  z-index: 1;
+  /* background-image: linear-gradient(right to left,#ff11ff,#11ff11); */
+}
+
+#container-1 {
+  position: relative;
+  background-color: #ffffff;
+}
+
+#section-two {
+  margin: 5em 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: white;
+  /* background-image: url(../../assets/section-blackv2.svg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* background-image: linear-gradient(right to left,#ff11ff,#11ff11); */
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#s2-left {
+  font-size: inherit;
+  font-family: sans-serif;
+  font-weight: 900;
+  max-width: 50em;
+  flex: 1.5;
+  min-height: 10em;
+  align-self: baseline;
+}
+
+#s2-right {
+  flex: 1;
+  border-radius: 10em;
+  height: 25em;
+  margin: 0 0 10em 15em;
+  background-image: url(../../assets/konnekt.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-container {
+  font-size: larger;
+  font-weight: 600;
+  font-family: cursive;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding: 10em 0;
+}
+
+.section-content-container {
+  z-index: 1;
+  /* display:inline-block; */
+  margin: auto;
+  align-items: center;
+  width: 60em;
+  max-width: 80%;
+}

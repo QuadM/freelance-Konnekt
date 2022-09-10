@@ -1,0 +1,13 @@
+.form-card-container{
+    position: relative;
+    
+    margin:  5em auto 0 ;
+    padding: 5em 3em;
+    width: fit-content;
+    border-radius: 3em;
+    box-shadow: #f0f0f0 20px 0px 5em 20px;
+
+    font-size: large;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
